@@ -13,7 +13,11 @@ const reviewRoutes = require("./routes/reviewRoutes");
 const app = express();
 
 
-app.use(cors());
+app.use(
+    cors({
+        origin: "https://borrow-hub-grio.vercel.app"
+    })
+);
 app.use(express.json());
 
 app.use("/api/users", userRoutes);
