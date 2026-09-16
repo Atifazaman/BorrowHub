@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://borrow-hub-brown.vercel.app"
+    baseURL: "https://borrow-hub-brown.vercel.app/api"
 });
 
 // Add token to every request
